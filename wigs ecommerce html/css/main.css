@@ -1,0 +1,253 @@
+.sidebar {
+  padding: 50px 15px 60px 55px;
+  width: 252px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar-logo {
+  margin-bottom: 57px;
+}
+.sidebar-help {
+  margin-top: 300px;
+}
+
+.nav-title {
+  margin-bottom: 44px;
+  font-weight: 800;
+  font-size: 30px;
+}
+.list1 {
+  font-size: 15.7px;
+}
+.list1 li {
+  margin-bottom: 27px;
+}
+
+.list1 a:hover {
+  color: #fd2e24;
+}
+.list1 img {
+  margin-right: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 26px;
+  height: auto;
+  object-fit: none;
+}
+.help {
+  font-size: 15.7px;
+}
+.sidebar-help a:hover {
+  color: #fd2e24;
+}
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+.main {
+  padding-top: 45px;
+  width: 1200px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
+  margin-bottom: 70px;
+}
+.search {
+  width: 490px;
+  height: 44px;
+}
+.search-label {
+  height: 100%;
+  display: flex;
+}
+.search-icon {
+  margin-right: 7px;
+}
+.search-input {
+  padding: 0 10px;
+  flex-grow: 1;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: "Circular Std";
+  background: none;
+  border-radius: 15px;
+}
+.search-input:focus,
+.search-input:active {
+  background-color: #fff;
+}
+.search-input ::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+  font-size: 17px;
+  font-family: "Circular Std";
+}
+.list2 {
+  display: flex;
+  align-items: center;
+}
+.navigation-links {
+  margin-right: 42px;
+  position: relative;
+}
+.navigation-links::after {
+  position: absolute;
+  left: 0;
+  width: 0%;
+  bottom: -9px;
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: black;
+  transition: width 0.2s ease-in;
+}
+.navigation-links:hover::after {
+  width: 100%;
+}
+.navigation-links.active::after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -9px;
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: black;
+}
+.navigation-icon + .navigation-icon {
+  margin-left: 25px;
+}
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.row {
+  display: flex;
+  column-gap: 40px;
+}
+.col-horizontal {
+  display: flex;
+  column-gap: 30px;
+}
+.col-vertical {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.2s ease-in;
+}
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px gray;
+}
+.card-horizontal {
+  width: 539px;
+  height: 180px;
+}
+.sale {
+  background-image: url("/cards/Group\ 14.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.summer-sale {
+  background-image: url("/cards/W2.svg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.card-vertical {
+  width: 259px;
+  height: 380px;
+}
+.card-product {
+  position: relative;
+}
+.card-product-link {
+  width: 100%;
+  height: 100%;
+}
+.card-product-btn1 {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  text-align: center;
+}
+.card-product-btn1 svg {
+  display: inline-block;
+  vertical-align: middle;
+  stroke: black;
+  fill: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.card-product-btn1:hover svg {
+  stroke: #fd2e24;
+  fill: #fd2e24;
+}
+.card-product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Trending {
+  background: url("/cards/Mask\ Group4.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+.Trending-list {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #001aa2;
+}
+.Hot-list {
+  font: 15px;
+  font-weight: 500;
+}
+.Buy-it {
+  background: url("/cards/Mask\ Group5.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 20px;
+}
+.Trending-list2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fd2e24;
+}
